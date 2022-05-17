@@ -3,7 +3,8 @@ public class Solution {
         // Case
             if (haystack.Length == 0 || needle.Length == 0)
                 return 0;
-
+            if (haystack.Length < needle.Length)
+                return -1;
             // Logic
             for(int i = 0; i < (haystack.Length + 1 - needle.Length); i++)
             {
