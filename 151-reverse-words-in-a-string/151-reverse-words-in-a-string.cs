@@ -1,16 +1,17 @@
 public class Solution {
     public string ReverseWords(string s) {
+            
         // Declaration
             StringBuilder x = new();
             string[] str = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             int start = 0, end = str.Length-1;
             string tmp = string.Empty;
-            // Case
+            
+        // Case
             if (s == null)
                 return null;
-            // Logic
             
-            
+        // Logic  
             while(start < end)
             {
                 tmp = str[start];
@@ -28,6 +29,5 @@ public class Solution {
             }
             s = x.ToString();
             return s;
-
     }
 }
